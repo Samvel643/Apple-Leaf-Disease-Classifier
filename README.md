@@ -2,8 +2,8 @@
 Deep learning model for Apple Leaf Disease Classification (Plant Pathology 2021).
 
 ## Members
-* Erik Bagdasaryan
 * Samvel Fahradyan
+* Erik Bagdasaryan
 * Anastasiya Tikunova
 * Aram Khachatryan
 
