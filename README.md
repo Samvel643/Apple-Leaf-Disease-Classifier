@@ -16,10 +16,14 @@ The goal of this project is to build a robust Computer Vision Deep Learning mode
 * **Data Splitting:** To handle multi-label dependencies effectively, we applied **Multi-label Iterative Stratification**.
 * **Explainability:** We implemented **Grad-CAM** to visualize the specific regions of the leaf that trigger disease classifications, ensuring our model learns meaningful biological features rather than background noise.
 
-## Results & Data Analysis
+## Results
 
 <img width="479" height="463" alt="Screenshot_7" src="https://github.com/user-attachments/assets/e66666a4-27cd-4bc8-a4ad-b33ccb1678a7" />
 
+
+<img width="521" height="547" alt="Screenshot_11" src="https://github.com/user-attachments/assets/58302338-5bf8-49a4-8148-f6020b2fd2a5" />
+
+<img width="517" height="546" alt="Screenshot_12" src="https://github.com/user-attachments/assets/b6cdc64b-583a-4177-be89-dcee5ea992df" />
 
 
 ## How to Run
