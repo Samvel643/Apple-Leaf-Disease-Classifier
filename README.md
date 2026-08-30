@@ -1,4 +1,5 @@
 # Apple-Leaf-Disease-Classifier
+
 Deep learning model for Apple Leaf Disease Classification (Plant Pathology 2021).
 
 ## Members
@@ -8,20 +9,30 @@ Deep learning model for Apple Leaf Disease Classification (Plant Pathology 2021)
 * Aram Khachatryan
 
 ## Project Overview
-The goal of this project is to build a robust Computer Vision Deep Learning model to accurately classify apple leaf diseases based on the [Plant Pathology 2021 - FGVC8](https://www.kaggle.com/c/plant-pathology-2021-fgvc8) dataset. The model is designed to handle complex scenarios, including leaves with multiple concurrent diseases and varying background lighting conditions.
+The goal of this project is to build a robust Computer Vision Deep Learning model to accurately classify apple leaf diseases based on the Plant Pathology 2021 - FGVC8 dataset. The model is designed to handle complex scenarios, including leaves with multiple concurrent diseases and varying background lighting conditions.
 
-## Architecture
-[TODO: Specify your final model architecture (e.g., ResNet50, EfficientNet). Mention if you used Transfer Learning and explain why you chose this specific architecture.]
+## Architecture & Techniques
+* **Model Architecture:** We utilized a pre-trained **ResNet-50** architecture, modifying the final fully connected layer to output probabilities for our 6 target classes. Transfer learning was chosen to leverage robust feature extraction from ImageNet, speeding up convergence.
+* **Data Splitting:** To handle multi-label dependencies effectively, we applied **Multi-label Iterative Stratification**.
+* **Explainability:** We implemented **Grad-CAM** to visualize the specific regions of the leaf that trigger disease classifications, ensuring our model learns meaningful biological features rather than background noise.
 
-## Results & Error Analysis
-[TODO: Insert 1-2 visual graphs here, such as a Loss/Accuracy curve or a Confusion Matrix. 
-Crucially, include 2-3 examples of incorrect predictions and explain why the neural network got confused, demonstrating a deep understanding of the dataset.]
+## Results & Data Analysis
+
+*(Drag and drop your Class Distribution graph here)*
+![Class Distribution](INSERT_IMAGE_LINK_HERE.png)
+
+*(Drag and drop a Grad-CAM result here showing a correct/incorrect prediction heatmap)*
+![Grad-CAM Visualization](INSERT_GRADCAM_IMAGE_LINK_HERE.png)
 
 ## How to Run
-1. Install the necessary dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-2. Run the `predict.py` script to make an inference on a new raw image:
-   ```bash
-   python predict.py --image_path path/to/leaf.jpg
+
+Instead of a command-line script, we have provided a clean, standalone inference notebook. Model weights are automatically downloaded from Google Drive, and the script applies the exact training transforms to output clear, human-readable predictions and heatmaps.
+
+Test the model instantly by opening the predictor in Google Colab:
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/Plant-Pathology-2021-FGVC8/blob/main/predictor_gradcam.ipynb)
+
+**Steps:**
+1. Click the **Open in Colab** badge above.
+2. Run all cells sequentially (`Runtime` -> `Run all`).
+3. In the final cell, you will be prompted to upload any raw `.jpg` leaf image. The script will decode the output and display the predicted disease, confidence score, and a Grad-CAM heatmap.
