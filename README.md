@@ -18,11 +18,11 @@ The goal of this project is to build a robust Computer Vision Deep Learning mode
 
 ## Results & Data Analysis
 
-*(Drag and drop your Class Distribution graph here)*
-![Class Distribution](INSERT_IMAGE_LINK_HERE.png)
+*(Drag and drop your Class Distribution graph here and delete this text)*
 
-*(Drag and drop a Grad-CAM result here showing a correct/incorrect prediction heatmap)*
-![Grad-CAM Visualization](INSERT_GRADCAM_IMAGE_LINK_HERE.png)
+
+*(Drag and drop a Grad-CAM result here showing a prediction heatmap and delete this text)*
+
 
 ## How to Run
 
@@ -30,7 +30,7 @@ Instead of a command-line script, we have provided a clean, standalone inference
 
 Test the model instantly by opening the predictor in Google Colab:
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_GITHUB_USERNAME/Plant-Pathology-2021-FGVC8/blob/main/predictor_gradcam.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Samvel643/Apple-Leaf-Disease-Classifier/blob/main/predictor.ipynb)
 
 **Steps:**
 1. Click the **Open in Colab** badge above.
