@@ -18,10 +18,8 @@ The goal of this project is to build a robust Computer Vision Deep Learning mode
 
 ## Results & Data Analysis
 
-*(Drag and drop your Class Distribution graph here and delete this text)*
+<img width="479" height="463" alt="Screenshot_7" src="https://github.com/user-attachments/assets/e66666a4-27cd-4bc8-a4ad-b33ccb1678a7" />
 
-
-*(Drag and drop a Grad-CAM result here showing a prediction heatmap and delete this text)*
 
 
 ## How to Run
